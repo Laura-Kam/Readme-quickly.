@@ -48,6 +48,7 @@ function init() {
           "Apache license 2.0",
           "GNU General Public License v3.0",
           "MIT",
+          "None",
         ],
       },
       {
@@ -77,9 +78,8 @@ function init() {
       },
     ])
     .then((response) => {
-      console.log(response);
       const string = generateMarkdown(response);
-      fs.writeFile("README.md", string, (err) =>
+      fs.writeFile("./dist/README.md", string, (err) =>
         err ? console.error(err) : console.log("Success!- Readme created!")
       );
     });

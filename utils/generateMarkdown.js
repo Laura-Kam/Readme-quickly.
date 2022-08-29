@@ -2,17 +2,15 @@
 // If there is no license, return an empty string
 
 function renderLicenseBadge(license) {
-  let licenseChosen = response.license;
   let licenseBadge = "";
-  if (licenseChosen === "MIT") {
-    licenseBadge = `$[![License](https://img.shields.io/badge/license-MIT-blue)]`;
-  } else if (licenseChosen === "GNU General Public License v3.0") {
-    licenseBadge = `[![License](https://img.shields.io/badge/License-GNU%20GPL-blue)]`;
-  } else if (licenseChosen === "Apache license 2.0") {
-    licenseBadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`;
-  } else {
-    licenseBadge = "";
+  if (license === "MIT") {
+    licenseBadge = `![License](https://img.shields.io/badge/license-MIT-blue.svg)`;
+  } else if (license === "GNU General Public License v3.0") {
+    licenseBadge = `![License](https://img.shields.io/badge/License-GNU%20GPL-blue.svg)`;
+  } else if (license === "Apache license 2.0") {
+    licenseBadge = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
   }
+  return licenseBadge;
 }
 
 // // [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -22,63 +20,65 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let licenseChosen = response.license;
-  let licenseLink = "";
+  let licenseLink = `* [License](#license)`;
 
-  if (licenseChosen === "MIT") {
-    licenseLink = `$[![License](https://opensource.org/licenses/MIT]`;
-  } else if (licenseChosen === "GNU General Public License v3.0") {
-    licenseLink = `[![License](https://opensource.org/licenses/gpl-license]`;
-  } else if (licenseChosen === "Apache license 2.0") {
-    licenseBadge = `[![License](https://opensource.org/licenses/Apache-2.0)]`;
-  } else {
+  if (license === "None") {
     licenseLink = "";
   }
+  return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let licenseSection = `## License
+  ${license} `;
+
+  if (license === "None") {
+    licenseSection = "";
+  }
+  return licenseSection;
+}
 
 // TODO: Create a function to generate markdown for README
 
 //data? not response?
 
 function generateMarkdown(response) {
+  console.log(response.license);
   let licenseChosen = response.license;
-  let licenseBadge = "";
 
   renderLicenseBadge(licenseChosen);
 
-  return `# Title of Project: ${response.title} ${response.license}
-  ${licenseLink}  ${licenseBadge};
+  return `# Title of Project: ${response.title}
+  ${renderLicenseBadge(licenseChosen)}
 
   ## Table of Contents:
-  * Git-hub Username
-  * Project description
-  * License
-  * Command to install
-  * Command to run tests
-  * Instructions for users
-  * Features of the project
-  * How to contribute
+  
+  * [Username](#username)
+  * [Project Description](#short-description)
+  ${renderLicenseLink(licenseChosen)}
+  * [Command to install](#command-to-install)
+  * [Command to run tests](#command-to-run-tests)
+  * [Instructions for users](#instructions-for-users-of-the-app)
+  * [Features of the project](#features-of-the-project)
+  * [How to contribute](#how-to-contribute)
   
 
-  ## Git-hub username
+  ## Username
     ${response.username},
-  ## Short description
+  ## Short-description
    ${response.description},
-  ## License
-   ${response.license},
+${renderLicenseSection(licenseChosen)}
   ## Command to install
    ${response.installDependencies},
   ## Command to run tests
    ${response.tests},
   ## Instructions for users of the app
    ${response.instructions},
-  ## Features of your project
+  ## Features of the project
    ${response.features},
-  ## How someone else can contribute to the repo
+  ## How to contribute
    ${response.contribute},
 `;
   console.log(response);
