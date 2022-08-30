@@ -76,6 +76,11 @@ function init() {
         message: "How can someone else contribute to your repo?",
         name: "contribute",
       },
+      {
+        type: "input",
+        message: "What is your email address?",
+        name: "email",
+      },
     ])
     .then((response) => {
       const string = generateMarkdown(response);

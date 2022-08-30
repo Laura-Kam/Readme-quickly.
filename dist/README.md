@@ -1,5 +1,5 @@
-# Title of Project: kk
-  ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+# Title of Project: hh
+  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
   ## Table of Contents:
   
@@ -11,21 +11,25 @@
   * [Instructions for users](#instructions-for-users-of-the-app)
   * [Features of the project](#features-of-the-project)
   * [How to contribute](#how-to-contribute)
+  * [Questions](#questions)
   
 
   ## Username
-    kk,
+    Laura-Kam,
   ## Short-description
-   kk,
+   h,
 ## License
-  MIT 
+  Apache license 2.0 
   ## Command to install
-   kk,
+   h,
   ## Command to run tests
-   kk,
+   h,
   ## Instructions for users of the app
-   kk,
+   h,
   ## Features of the project
-   kk,
+   h,
   ## How to contribute
-   kk,
+   h,
+   ## Questions 
+   If you have any questions, or would like to get in touch find me on GitHub [Laura-Kam](https://github.com/Laura-Kam)
+   or email me at h.

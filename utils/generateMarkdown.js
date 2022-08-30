@@ -63,6 +63,7 @@ function generateMarkdown(response) {
   * [Instructions for users](#instructions-for-users-of-the-app)
   * [Features of the project](#features-of-the-project)
   * [How to contribute](#how-to-contribute)
+  * [Questions](#questions)
   
 
   ## Username
@@ -80,6 +81,11 @@ ${renderLicenseSection(licenseChosen)}
    ${response.features},
   ## How to contribute
    ${response.contribute},
+   ## Questions 
+   If you have any questions, or would like to get in touch find me on GitHub [${
+     response.username
+   }](https://github.com/${response.username})
+   or email me at ${response.email}.
 `;
   console.log(response);
 }
