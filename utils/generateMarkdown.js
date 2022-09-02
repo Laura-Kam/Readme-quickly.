@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// function that returns a license badge based on which license is passed in
 
 function renderLicenseBadge(license) {
   let licenseBadge = "";
@@ -17,8 +16,8 @@ function renderLicenseBadge(license) {
 // //[![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
 // //[![License](https://img.shields.io/badge/License-GNU%20GPL-blue)](https://opensource.org/licenses/gpl-license)
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// A function that returns the license link
+
 function renderLicenseLink(license) {
   let licenseLink = `* [License](#license)`;
 
@@ -28,8 +27,7 @@ function renderLicenseLink(license) {
   return licenseLink;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//A function that returns the license section of README
 function renderLicenseSection(license) {
   let licenseSection = `## License
   ${license} `;
@@ -40,10 +38,8 @@ function renderLicenseSection(license) {
   return licenseSection;
 }
 
-// TODO: Create a function to generate markdown for README
-
-//data? not response?
-
+// function to generate markdown for README
+// internal links added.
 function generateMarkdown(response) {
   console.log(response.license);
   let licenseChosen = response.license;
@@ -91,5 +87,3 @@ ${renderLicenseSection(licenseChosen)}
 }
 
 module.exports = generateMarkdown;
-
-//which bits of code, functions/objects/strings etc to export from this file to index.js
