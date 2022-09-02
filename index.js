@@ -38,6 +38,7 @@ function init() {
       {
         type: "input",
         message: "Please write a short description of your project:",
+        default: "What was your motivation?, What problem are you solving?",
         name: "description",
       },
       {
@@ -55,11 +56,13 @@ function init() {
         type: "input",
         message: "What command should be executed to install dependencies?",
         name: "installDependencies",
+        default: "npm i",
       },
       {
+        name: "tests",
         type: "input",
         message: "What command is used to run tests?",
-        name: "tests",
+        default: "npm test",
       },
       {
         type: "input",
@@ -75,6 +78,7 @@ function init() {
         type: "input",
         message: "How can someone else contribute to your repo?",
         name: "contribute",
+        default: "Git clone the repo, work on the code, make a pull request.",
       },
       {
         type: "input",

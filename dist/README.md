@@ -1,4 +1,4 @@
-# Title of Project: hh
+# Title of Project: Readme-quickly.
   ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
   ## Table of Contents:
@@ -17,19 +17,19 @@
   ## Username
     Laura-Kam,
   ## Short-description
-   h,
+   Creating a README  file fast ,
 ## License
   Apache license 2.0 
   ## Command to install
-   h,
+   nom i,
   ## Command to run tests
-   h,
+   npm test,
   ## Instructions for users of the app
-   h,
+   none,
   ## Features of the project
-   h,
+   kk,
   ## How to contribute
-   h,
+   yep,
    ## Questions 
    If you have any questions, or would like to get in touch find me on GitHub [Laura-Kam](https://github.com/Laura-Kam)
-   or email me at h.
+   or email me at laura_ek@yahoo.co.uk.
