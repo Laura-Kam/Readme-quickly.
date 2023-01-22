@@ -69,6 +69,8 @@ GIVEN a command-line application that accepts user input
 
 # How to contribute
 
+- Pull the repo, work on it locally, then push up to be acccepted.
+
 # License
 
 - MIT
