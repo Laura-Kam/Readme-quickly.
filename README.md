@@ -14,7 +14,7 @@
 
 ## Installation Instructions
 
--Type 'npm i' in the command-line.
+- Type 'npm i' in the command-line.
 
 - Install npm i inquirer@8.2.4
 
