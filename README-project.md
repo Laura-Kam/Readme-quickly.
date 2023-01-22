@@ -1,49 +1,45 @@
-# Readme-quickly.
+## Readme-quickly.
 
-## Description
+# Description
 
 - This is a command-line application which dynamically and efficiently generates a README.md file.
 - Build to allow developers to focus on their code as opposed to spending a long time on their README.md file.
 - I learnt that automation and efficiency are hugely important as a developer.
 
-## Table of contents created within the application
+# Installation Instructions
 
-- Username
-- Project Description
-- License
-- Command to install
-- Command to run tests
-- Instructions for the user
-- Features of the project
-- How to contribute
-- Questions
+-Type 'npm i' in the command-line.
 
-## Link to Git-hub repo.
+# Link to GitHub Repo.
 
 [Link to repo](https://github.com/Laura-Kam/Readme-quickly.)
 
-## Screenshot of application:
+# Screenshot of application:
 
-[Screenshot of website](https://github.com/Laura-Kam/Readme-quickly./issues/1#issue-1360357463)
+![Screenshot of website](https://user-images.githubusercontent.com/104718053/188190224-ba261883-63e7-44f2-ab97-31f418b9bda5.png)
 
-## bugs
+# Bugs
 
 - link to GitHub repo was not working. Issue solved by taking away the ! symbol.
 - Readme file created was being overwritten. Issue solved by directing the created file to a folder.
 
-## Version history
+# Version history
 
 - 0.1 Created a black readme
 - 0.2 Entered Questions into index.js
 - 0.3 Added internal links within readme
 - 0.4 Added licenses and their respective badges.
 
-## License
-
-- MIT
-
 # Link to video (Screencastify and Google Drive)
 
 - [Readme-quick Video Google Drive](https://drive.google.com/file/d/1gMWlVDz_7tPsQE3zmaHSmv7ZrlBwwHVh/view)
 
 - [Readme-quick Video Screencastify](https://watch.screencastify.com/v/GuAQASyAuUXuigGIyFzB)
+
+# License
+
+- MIT
+
+# Contact Me
+
+- laurakam91@gmail.com

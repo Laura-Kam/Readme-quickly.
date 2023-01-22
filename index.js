@@ -8,14 +8,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   "What is your Github username?",
   "What is your email address?",
-  "What is your project title?",
-  "Please write a short description of your project:",
-  "What kind of license should your project have?",
-  "What command should be executed to install dependencies?",
-  "What command is used to run tests?",
-  "What instructions should you provide the user for this app?",
-  "What are the features of your project?",
-  "How can someone else contribute to your repo?",
 ];
 
 //  a function to initialize app
